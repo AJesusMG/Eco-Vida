@@ -1,4 +1,4 @@
-import { Button, Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 import ModalVideo from "../ModalVideo/ModalVideo";
 
 export default function HeroSection() {
