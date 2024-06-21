@@ -8,7 +8,7 @@ export default function PurposeSection({ id }: PurposeSectionProps) {
   return (
     <div id={id} className="flex flex-col items-center px-4 md:px-8 gap-4 md:gap-8  ">
       <div className="text-center mb-8">
-        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold">Nuestro Propósito</h2>
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black">Nuestro Propósito</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-white p-6 rounded-lg shadow-md">

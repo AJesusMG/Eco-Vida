@@ -1,4 +1,5 @@
 import { ThemeColors, nextui } from "@nextui-org/react";
+import daisyui from "daisyui"
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -82,6 +83,6 @@ const config: Config = {
         } as Partial<ThemeColors & { accent: string }>,
       }
     }
-  })],
+  }), daisyui],
 };
 export default config;

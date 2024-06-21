@@ -34,7 +34,7 @@ export default function NavBar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit text-lg">Masamicktlan</p>
+          <p className="font-bold text-lg text-black">Masamicktlan</p>
         </NavbarBrand>
       </NavbarContent>
 

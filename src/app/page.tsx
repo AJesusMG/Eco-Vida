@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar/NavBar";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import PurposeSection from "@/components/PurposeSection/PurposeSection";
 import ActionsSections from "@/components/ActionsSection/ActionsSection";
+import RecommendedCarousel from "@/components/RecommendedCarousel/RecommendedCarousel";
 
 export default function LandingPage() {
   return (
@@ -14,6 +15,7 @@ export default function LandingPage() {
         <HeroSection id="inicio" /> 
         <PurposeSection id="proposito" />
         <ActionsSections id="acciones"/>
+        <RecommendedCarousel id="recomendaciones"/>
       </div>
     </div>
   );

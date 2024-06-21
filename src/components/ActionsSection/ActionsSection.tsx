@@ -26,7 +26,7 @@ export default function ActionsSections({ id }: ActionsSectionProps) {
 
   return (
     <div id={id} className="h-full flex flex-col items-center px-4 md:px-8 gap-4 md:gap-8">
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">Acciones</h1>
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black">Acciones</h1>
       <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2">
         <Card className="col-span-12 sm:col-span-4 h-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start gap-2">

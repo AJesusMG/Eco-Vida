@@ -9,7 +9,7 @@ export default function HeroSection({ id }: HeroSectionProps) {
   return (
     <div id={id} className="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 gap-4 md:gap-8">
       <div className="flex flex-col gap-4 w-full md:w-1/2 text-center md:text-left">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black">
           ¿Neta qué les <br /> cuesta?
         </h1>
         <h1 className="text-lg md:text-xl lg:text-2xl text-secondary-400">
