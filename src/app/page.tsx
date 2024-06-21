@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import PurposeSection from "@/components/PurposeSection/PurposeSection";
 import ActionsSections from "@/components/ActionsSection/ActionsSection";
 import RecommendedCarousel from "@/components/RecommendedCarousel/RecommendedCarousel";
+import ResultsCarousel from "@/components/ResultsCarousel/ResultsCarousel";
 
 export default function LandingPage() {
   return (
@@ -16,6 +17,7 @@ export default function LandingPage() {
         <PurposeSection id="proposito" />
         <ActionsSections id="acciones"/>
         <RecommendedCarousel id="recomendaciones"/>
+        <ResultsCarousel id="resultados"/>
       </div>
     </div>
   );
