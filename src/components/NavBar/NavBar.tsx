@@ -20,7 +20,7 @@ export default function NavBar() {
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <p className="font-bold text-inherit text-lg">Eco-Vida</p>
+                    <p className="font-bold text-inherit text-lg">Masamicktlan</p>
                 </NavbarBrand>
             </NavbarContent>
 

@@ -1,12 +1,13 @@
-import { Button, Link } from "@nextui-org/react";
-import NextLink from "next/link";
+'use client'
 
-export default function Home() {
+import HeroSection from "@/components/HeroSection/HeroSection";
+import NavBar from "@/components/NavBar/NavBar";
+
+export default function LandingPage() {
   return (
-    <main className="flex-1 p-4">
-      <div className="flex flex-col gap-4 justify-start items-start">
-        <p>El emilio es puto</p>
-      </div>
-    </main>
-  );
+    <div className="w-full h-full">
+      <NavBar />
+      <HeroSection/>
+    </div>
+  )
 }
