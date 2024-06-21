@@ -39,6 +39,11 @@ export default function ActionsSections({ id }: ActionsSectionProps) {
             className="z-0 w-full h-full object-cover"
             src="/IMG1.jpg"
           />
+          <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+            <Button className="text-tiny text-black bg-white" radius="full" size="sm" onClick={() => handleModalOpen("/Video_5.mp4")}>
+              Ver Video
+            </Button>
+          </CardFooter>
         </Card>
         <Card className="col-span-12 sm:col-span-4 h-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start gap-2">
@@ -51,6 +56,11 @@ export default function ActionsSections({ id }: ActionsSectionProps) {
             className="z-0 w-full h-full object-cover"
             src="/IMG2.jpg"
           />
+          <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+            <Button className="text-tiny text-black bg-white" radius="full" size="sm" onClick={() => handleModalOpen("/Video_6.mp4")}>
+              Ver Video
+            </Button>
+          </CardFooter>
         </Card>
         <Card className="col-span-12 sm:col-span-4 h-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -63,6 +73,11 @@ export default function ActionsSections({ id }: ActionsSectionProps) {
             className="z-0 w-full h-full object-cover"
             src="/IMG3.jpg"
           />
+          <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+            <Button className="text-tiny text-black bg-white" radius="full" size="sm" onClick={() => handleModalOpen("/Video_7.mp4")}>
+              Ver Video
+            </Button>
+          </CardFooter>
         </Card>
         <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
