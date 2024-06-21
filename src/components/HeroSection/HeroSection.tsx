@@ -1,6 +1,29 @@
+import React, { useState, useRef } from "react";
 import { Button, Image } from "@nextui-org/react";
 
-export default function HeroSection() {
+const HeroSection: React.FC = () => {
+  const [currentVideo, setCurrentVideo] = useState<number>(1);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  const handleVideoEnd = () => {
+    if (currentVideo === 1) {
+      setCurrentVideo(2);
+      if (videoRef.current) {
+        videoRef.current.src = "/Video_2.mp4";
+        videoRef.current.play();
+      }
+    } else {
+      setCurrentVideo(1);
+    }
+  };
+
+  const handleButtonClick = () => {
+    if (videoRef.current) {
+      videoRef.current.src = "/Video_1.mp4";
+      videoRef.current.play();
+    }
+  };
+
   return (
     <div className="h-screen flex flex-col md:flex-row justify-between items-center px-4 md:px-8 gap-4 md:gap-8">
       <div className="flex flex-col gap-4 w-full md:w-1/2 text-center md:text-left">
@@ -18,7 +41,8 @@ export default function HeroSection() {
           <Button 
             size="lg" 
             className="text-white bg-primary-600 w-3/4 md:w-1/2 lg:w-1/3" 
-            endContent={<span className="material-symbols-outlined">video_library</span>}>
+            endContent={<span className="material-symbols-outlined">video_library</span>}
+            onClick={handleButtonClick}>
             Ver videos
           </Button>
         </div>
@@ -30,6 +54,13 @@ export default function HeroSection() {
           radius="sm"
         />
       </div>
+      <div className="hidden">
+        <video ref={videoRef} onEnded={handleVideoEnd} controls className="hidden">
+          <source src="/Video_1.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
   );
 }
+
+export default HeroSection;
