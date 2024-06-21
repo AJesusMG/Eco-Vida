@@ -1,9 +1,13 @@
 import { Image } from "@nextui-org/react";
 import ModalVideo from "../ModalVideo/ModalVideo";
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  id: string;
+}
+
+export default function HeroSection({ id }: HeroSectionProps) {
   return (
-    <div className="h-screen flex flex-col md:flex-row justify-between items-center px-4 md:px-8 gap-4 md:gap-8">
+    <div id={id} className="h-screen flex flex-col md:flex-row justify-between items-center px-4 md:px-8 gap-4 md:gap-8">
       <div className="flex flex-col gap-4 w-full md:w-1/2 text-center md:text-left">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
           ¿Neta qué les <br /> cuesta?
