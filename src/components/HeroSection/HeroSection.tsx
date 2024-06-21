@@ -1,4 +1,4 @@
-import { Image } from "@nextui-org/react";
+import { Button, Image } from "@nextui-org/react";
 
 export default function HeroSection() {
   return (
@@ -14,13 +14,20 @@ export default function HeroSection() {
           La pagina no solamente va dirigido a un tema ambiental o de reciclaje como proyecto. <br />
           Si no tambien a la prevencion sobre el uso de sustancias psicoactivas tomando encuestas, videos y recomendaciones.
         </p>
+        <div className="flex justify-center md:justify-start">
+          <Button 
+            size="lg" 
+            className="text-white bg-primary-600 w-3/4 md:w-1/2 lg:w-1/3" 
+            endContent={<span className="material-symbols-outlined">video_library</span>}>
+            Ver videos
+          </Button>
+        </div>
       </div>
       <div id="image" className="w-full md:w-1/2 flex justify-center md:justify-end mt-4 md:mt-0">
         <Image
           src="/HeroImage.jpg"
           alt="Picture of the author"
           radius="sm"
-
         />
       </div>
     </div>
