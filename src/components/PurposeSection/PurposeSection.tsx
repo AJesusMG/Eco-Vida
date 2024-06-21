@@ -6,7 +6,7 @@ interface PurposeSectionProps {
 
 export default function PurposeSection({ id }: PurposeSectionProps) {
   return (
-    <div id={id} className="flex flex-col items-center px-4 md:px-8 gap-4 md:gap-8 py-24 lg:py-8">
+    <div id={id} className="flex flex-col items-center px-4 md:px-8 gap-4 md:gap-8  ">
       <div className="text-center mb-8">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold">Nuestro Propósito</h2>
       </div>

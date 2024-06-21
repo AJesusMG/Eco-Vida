@@ -10,7 +10,7 @@ export default function LandingPage() {
   return (
     <div className="w-full h-full flex flex-col">
       <NavBar />
-      <div className="flex-1 flex flex-col gap-2 lg:gap-16 justify-center items-center px-4 md:px-8 py-16 ">
+      <div className="flex-1 flex flex-col gap-16 lg:gap-32 justify-center items-center px-4 md:px-8 py-24 ">
         <HeroSection id="inicio" /> 
         <PurposeSection id="proposito" />
         <ActionsSections id="acciones"/>
