@@ -7,6 +7,7 @@ import PurposeSection from "@/components/PurposeSection/PurposeSection";
 import ActionsSections from "@/components/ActionsSection/ActionsSection";
 import RecommendedCarousel from "@/components/RecommendedCarousel/RecommendedCarousel";
 import ResultsCarousel from "@/components/ResultsCarousel/ResultsCarousel";
+import Footer from "@/components/Footer/Footer";
 
 export default function LandingPage() {
   return (
@@ -19,6 +20,7 @@ export default function LandingPage() {
         <RecommendedCarousel id="recomendaciones"/>
         <ResultsCarousel id="resultados"/>
       </div>
+      <Footer/>
     </div>
   );
 };
